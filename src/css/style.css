@@ -1,0 +1,267 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-areas: "header header"
+        "capa capa"
+        "quem-somos quem-somos"
+        "cardapio cardapio"
+        "orcamento orcamento"
+        "contato contato";
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #FAE5CA;
+}
+
+header {
+    grid-area: header;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header nav .menu-itens {
+    display: flex;
+    font-size: 2.2rem;
+    margin-right: 50px;
+}
+
+.menu-itens a {
+    padding: 20px;
+    transition: 0.3s;
+    border-radius: 5px;
+    color: #702E1E;
+}
+
+.menu-itens a:hover {
+    background-color: #BD758D;
+    color: white;
+}
+
+.logo {
+    width: 60%;
+    margin-left: 50px;
+}
+
+/*  CAPA */
+
+.capa {
+    grid-area: capa;
+    height: 89vh;
+    background: url('../images/muffins-candles-aalaw-and-sprinkles-on-the-corner-of-pink-background.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa h2 {
+    font-size: 8rem;
+    font-family: 'Dancing Script', cursive;
+    color: #702E1E;
+}
+
+/*  QUEM SOMOS */
+
+.quem-somos {
+    grid-area: quem-somos;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.quem-somos .item {
+    display: flex;
+    flex-direction: column;
+    padding: 15%;
+}
+
+.quem-somos h3 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #823F67;
+}
+
+.quem-somos .texto-quem-somos {
+    font-size: 1.5rem;
+    color: #BD758D;
+}
+
+.quem-somos .imagem-quem-somos {
+    width: auto;
+    height: auto;
+
+}
+
+.imagem-quem-somos {
+    background-image: url('../images/quem-somos.jpg');
+    background-size: cover;
+}
+
+/*CARDAPIO*/
+.cardapio {
+    grid-area: cardapio;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #FDCC7B;
+}
+
+.cardapio-com-fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.cardapio h3 {
+    font-size: 3rem;
+    margin-top: 70px;
+    text-align: center;
+    color: #CD711F;
+}
+
+.bolo-e-doces-container {
+    display: flex;
+}
+
+.bolos-e-doces {
+    padding: 20px;
+    color: #702E1E;
+    margin-right: 50px;
+}
+
+.bolos-e-doces h4 {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.bolos-e-doces .itens {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    color: #702E1E;
+}
+
+.fotos {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.doces-fotos {
+    display: flex;
+    padding-right: 20px;
+}
+
+/*ORÇAMENTO*/
+
+.orcamento {
+    display: grid;
+    grid-area: orcamento;
+    grid-template-columns: 1fr;
+    background-image: url('../images/frame-of-food-ingredients-for-baking-on-a-gently-pink-pastel-background-cooking-flat-lay-with-copy-space-top-view-baking-concept-flat-lay.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.orcamento-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.orcamento h3 {
+    font-size: 3rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #823F67;
+}
+
+.orcamento .texto-orcamento {
+    font-size: 1.5rem;
+    color: #823F67;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 300px;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    background-color: #FC4C81;
+    margin-top: 30px;
+}
+
+a {
+    color: white;
+}
+
+button:hover {
+    background-color: #BD758D;
+}
+
+/*CONTATO*/
+
+.contato {
+    display: grid;
+    grid-area: contato;
+    grid-template-columns: 1fr;
+    padding: 60px;
+}
+
+.contato h3 {
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #823F67;
+}
+
+.contato p {
+    text-align: center;
+    color: #823F67;
+    font-size: 1.5rem;
+}
+
+.contato .redes {
+    display: flex;
+
+}
+
+footer {
+    padding: 80px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .redes {
+    justify-content: center;
+
+}
+
+footer .redes a {
+    color: #823F67;
+}
+
+
+footer .redes i {
+    font-size: 4rem;
+    padding: 10px;
+
+}
+
+footer .redes i:hover {
+    color: #BD758D;
+}

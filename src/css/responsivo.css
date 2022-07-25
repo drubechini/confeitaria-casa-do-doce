@@ -1,0 +1,87 @@
+@media(max-width: 1150px) {
+    .capa {
+        height: 60vh;
+    }
+
+    .logo {
+        margin-left: 30px;
+        width: 40%;
+
+    }
+
+    .cardapio-com-fotos {
+        flex-direction: column;
+    }
+
+    .bolos-e-doces-container {
+        justify-content: center;
+    }
+
+    .bolos-e-doces {
+        padding-right: 80px;
+        margin-right: 30px;
+    }
+
+}
+
+@media(max-width:800px) {
+    .doces-fotos img {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:600px) {
+    .capa {
+        align-items: flex-end;
+        /* height: 60vh; */
+    }
+
+    .capa h2 {
+        margin-bottom: 15%;
+    }
+
+    .quem-somos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .imagem-quem-somos {
+        grid-template-columns: 1fr;
+    }
+
+
+    .cardapio-com-fotos {
+        flex-direction: column;
+    }
+
+    .bolos-e-doces-container {
+        justify-content: center;
+    }
+
+    .bolos-e-doces {
+        padding: 20px;
+        margin-right: 30px;
+    }
+
+
+    .doces-fotos {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .doces-fotos img {
+        align-self: center;
+    }
+}
+
+@media(max-width: 500px) {
+    .orcamento-conteudo {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .capa h2 {
+        font-size: 5rem;
+    }
+}

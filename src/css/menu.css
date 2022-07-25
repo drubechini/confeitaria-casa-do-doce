@@ -1,0 +1,99 @@
+
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+    opacity: 0;
+}
+
+
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #000;
+    transition: 0.3s ease-in-out;
+}
+
+label span:nth-child(1){
+    top:0;
+}
+
+label span:nth-child(2){
+    top:8px;
+}
+
+label span:nth-child(3){
+    top:16px;
+}
+
+/*Quando for clicado */
+
+#checkbox-menu:checked + label span:nth-child(1){
+transform: rotate(-45deg); /*negativo p um lado */
+top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px; /*p ficar mais p baixo e centralizado*/
+}
+
+ 
+ 
+
+    @media(max-width: 915px){
+     .header nav {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        
+     }
+
+    .header nav .menu-itens{
+        display: none;
+        
+    }
+
+   
+    input:checked ~ .menu-itens{
+        display: block;
+    }
+
+    label{
+        opacity: 1;
+    }
+    .header nav{
+        position: absolute;
+        top: 8px;
+        right: 0;
+        z-index: 1;
+    }
+
+    .header nav .menu-itens{
+        width: 220px;
+        background-color:#FAE5CA;
+        padding: 20px;
+    }
+
+    .header nav .menu-itens a{
+        text-align: center;
+        display: block;
+        padding: 20px;
+    }
+}
+

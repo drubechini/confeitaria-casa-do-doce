@@ -1,0 +1,113 @@
+
+body{
+    background-color: #FAE5CA;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    color:   #823F67;
+    padding: 0 5% 5% 5%;
+    background: url('../images/fundo2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+header{
+    justify-content: center;
+   
+}
+
+.logo{
+    width: 15%;
+   
+  
+}
+
+h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.instrucao{
+    margin-bottom: 20px;
+}
+
+.dados-cadastro{
+    margin-bottom: 20px;
+
+}
+
+.dados-cadastro-usuario{
+    margin-bottom: 10px;
+}
+
+.bolos-e-quantidades{
+    display: flex;
+}
+
+
+.bolos {
+    display: flex;
+    
+}
+
+.itens-orcamento{
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.bolos{
+    margin-right: 60px;
+}
+
+.doces-e-quantidades{
+    display: flex;
+}
+
+.doces{
+    display: flex;
+    margin-right: 60px;
+}
+
+.quantidades{
+    display: flex;
+    margin-right: 60px;
+}
+
+.itens-orcamento h4{
+    margin-bottom: 10px;
+}
+
+.observacoes{
+    font-weight: 700;
+}
+
+.btn{
+    padding: 10px;
+    border:none;
+    background-color: #BD758D;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.btn:hover{
+    background-color: #823F67;
+}
+
+@media(max-width:930px){
+
+    body{
+        background: url('../images/fundo3.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .dados-cadastro{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 40%;
+    }
+}
