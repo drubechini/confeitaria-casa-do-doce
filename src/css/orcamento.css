@@ -1,4 +1,8 @@
 
+html{
+    font-size: 62.5%;
+}
+
 body{
     background-color: #FAE5CA;
     font-family: 'Roboto', sans-serif;
@@ -9,6 +13,7 @@ body{
     background: url('../images/fundo2.png');
     background-size: cover;
     background-repeat: no-repeat;
+    font-size: 1.5rem;
     
 }
 
@@ -112,8 +117,18 @@ h1{
     }
 
 }
-    @media(max-width: 600px){
-        body{
-            font-size: 70%;
-        }
+   
+
+  @media(max-width: 500px){
+    .bolos-e-quantidades {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
+
+    .doces-e-quantidades{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+  }
+}
