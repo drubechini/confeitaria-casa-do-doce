@@ -110,4 +110,10 @@ h1{
         flex-wrap: wrap;
         width: 40%;
     }
+
 }
+    @media(max-width: 600px){
+        body{
+            font-size: 70%;
+        }
+    }
