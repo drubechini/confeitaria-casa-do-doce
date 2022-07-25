@@ -175,6 +175,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 100px;
+    text-align: center;
 }
 
 .orcamento h3 {
@@ -222,7 +223,7 @@ button:hover {
 .contato h3 {
     font-size: 3rem;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-align: center;
     color: #823F67;
 }

@@ -75,13 +75,24 @@
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width:580px) {
     .orcamento-conteudo {
-        padding: 0;
-        margin-bottom: 30px;
+        text-align: center;
+        margin-left: 10%;
+        width: 1fr;
     }
+}
+
+@media(max-width: 500px) {
 
     .capa h2 {
         font-size: 5rem;
     }
+
+
+    button {
+        width: 150px;
+
+    }
+
 }
